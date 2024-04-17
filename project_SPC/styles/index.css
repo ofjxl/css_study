@@ -10,7 +10,7 @@ main h1 {
 }
 main > p {
     padding-bottom:40px;
-    font-size:1rem; font=weight:300px;
+    font-size:1rem; font-weight:300px;
     color:gray;
     letter-spacing:-0.2px;
 }
@@ -26,7 +26,8 @@ main .background .content > p {
     letter-spacing:-0.2px;
 }
 main .background .vision {}
-main .background .vision h2 {
+main .background .vision h2,
+main .background .goal h2 {
     padding-top:80px; padding-bottom:30px;
     font-size:1.375rem;
     color:#36B4E5;
@@ -35,3 +36,69 @@ main .background .vision p {
     line-height:45px;
     font-size:2.188rem;
 }
+/* goal */
+/* main .background .goal {}
+main .background .goal h2 {
+    color:#36B4E5;
+    font-size:1.875rem;
+    padding-top:80px; padding-bottom:30px;
+}
+main .background .goal ul {}
+main .background .goal ul li {
+    width:250px; height:250px;
+}
+main .background .goal ul .first {
+    background-color:#36B4E5;
+    text-align:center;
+    display:inline-block;
+}
+main .background .goal ul .first .icon {}
+main .background .goal ul .first .icon img {
+    width:60px; height:60px;
+}
+main .background .goal ul .first .icon h3 {
+    text-align:center;
+}
+main .background .goal ul .second {
+    background-color:#ffffff;
+    text-align:center;
+    display:inline-block;
+}
+main .background .goal ul .second .icon {}
+main .background .goal ul .second .icon img {
+    width:60px; height:60px;
+}
+main .background .goal ul .second .icon h3 {}
+main .background .goal ul .third {
+    background-color:#F3C300;
+    text-align:center;
+    display:inline-block;
+}
+main .background .goal ul .third .icon {}
+main .background .goal ul .third .icon img {
+    width:60px; height:60px;
+}
+main .background .goal ul .third .icon h3 {} */
+main .background .goal {}
+main .background .goal h2 {}
+main .background .goal .goal_contents {/* text-align:right; */}
+main .background .goal .goal_contents li {
+    width:250px; height:250px;
+    border-radius:50%;
+    display:inline-block;
+    padding-top:67px;
+    /* figma drop-shadow == css box-shadow */
+    /* box-shadow:x축 y축 blur값 색상; */
+    box-shadow:0px 0px 6px rgba(0,0,0,0.25);
+    /* text-align:center; */
+}
+main .background .goal .goal_contents li.first {background-color:#36B4E5;}
+main .background .goal .goal_contents li.second {background-color:#ffffff;}
+main .background .goal .goal_contents li.last {background-color:#F3C300;}
+main .background .goal .goal_contents li {padding-bottom:20px;}
+main .background .goal .goal_contents li .icon img {width:60px; height:60px;}
+main .background .goal .goal_contents li.first .h3 {
+    font-size:1.56rem; color:#fff;
+    letter-spacing:-0.2px;
+}
+main .background .goal .goal_contents .second h3 {color:#000;}

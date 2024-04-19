@@ -1,0 +1,73 @@
+main {
+    margin-left:20px;
+    font-family:"noto sans kr", sans-serif;
+    text-align:center;
+}
+main .title {
+    width:984px;
+    padding-top:300px;
+}
+main .title h1 {
+    font-size:2.5rem; font-weight:700;
+}
+main .title h1 span {
+    font-size:2.5rem; font-weight:700;
+    color:#B80B0B;
+}
+main .title p {
+    padding-top:20px; padding-bottom:62px;
+    font-size:1.25rem; font-weight:500;
+}
+/* table */
+main .date {
+    border:2px solid ;
+    border-left:0 ; border-right:0; 
+    width:984px;
+    /* display:inline-block; */
+}
+main .date thead {
+    font-size:1.125rem;
+    background-color:#FFE4EB;
+}
+main .date thead tr {}
+main .date thead tr th {
+    text-align:center;
+    /* padding:25px 54px 12px 80px; */
+    line-height:60px;
+}
+main .date tbody {
+    background-color:#fff;
+    border:1px solid #ddd; border-left:0; border-right:0; border-bottom:2px #000;
+}
+main .date tbody tr {}
+main .date tbody tr td {
+    border:1px solid #ddd; border-left:0; border-right:0;
+    font-size:1.125rem; font-weight:300;
+    line-height:62px;
+}
+main .date tbody tr td .down {
+    border-radius:125px;
+    border:1.5px solid #B80B0B;
+    display:inline-block;
+    /* width:125px;height:24px; */
+    color:#B80B0B;
+    font-weight:700; font-size:0.75rem;
+    line-height:22px;
+    padding:5px 24px;
+}
+main .date tbody tr td img {}
+/* number start */
+main .number {
+    padding-bottom:475px;
+    margin-top:38px;
+    width:984px;
+}
+main .number {}
+main .number a {
+    background-color:#F2F2F2;
+}
+main .number p {}
+main .number p span {
+    background-color:#B80B0B;
+}
+main .number p img {}

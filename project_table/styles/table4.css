@@ -1,0 +1,70 @@
+main {
+    width:859;
+    background-color:#f5f5f5;
+    font-family:"noto sans kr", sans-serif;
+    padding:60px 57px 60px 56px;
+    text-align:center;
+}
+main .content1 {
+    line-height:1.5;
+    color:#888888;
+    letter-spacing:-0.4px;
+    font-size:1.5rem;
+    padding-bottom:63px;
+}
+main .content2 {
+    padding-bottom:9px;
+    font-size:1.5rem; font-weight:700;
+}
+/* table start */
+main table td, table th {
+    border:1px solid #aaaaaa;
+}
+
+/* 개별 */
+main .t1 {
+    width:745px;
+    width:100%;
+    text-align:center;
+    font-size:1.25rem;
+    border-style:solid;
+}
+main .t1 thead {
+    font-size:1.25rem; font-weight:700;
+    color:#fff;
+    background-color:#00155e;
+}
+main .t1 thead tr {}
+main .t1 thead tr th {
+    line-height:57px;
+    text-align:center;
+}
+main .t1 thead tr .first {
+    /* padding:14px 79px 19px 77px; */
+}
+main .t1 thead tr .second {
+    /* padding:14px 132px 19px 124px; */
+}
+main .t1 thead tr .third {
+    /* padding:14px 64px 19px 65px; */
+}
+main .t1 tbody {}
+main .t1 tbody tr {}
+main .t1 tbody tr td {
+    line-height:54px;
+}
+main .t1 tbody tr .hour {
+    /* padding:11px 34px 19px 34px; */
+}
+main .t1 tbody tr .a {
+    /* padding:11px 62px 19px 63px; */
+    color:#888888;
+}
+main .t1 tbody tr .day {
+    padding:41px 62px 43px 62px;
+    font-weight:700; letter-spacing:0.2px;
+}
+main .t1 tbody tr .hour_2 {
+    line-height:1.5;
+    font-weight:700; 
+}

@@ -1,0 +1,60 @@
+main {
+    font-family:"noto sans kr", sans-serif;
+    /* text-align:center; */
+    margin-top:84px; margin-left:262px;
+    width:500px;
+}
+main h1 {
+    font-size:4.375rem; font-weight:900;
+    letter-spacing:-0.2px;
+    padding-bottom:25px;
+}
+main p {
+    font-size:1.25rem; letter-spacing:-0.2px;
+    padding-bottom:57px;
+}
+/* form start */
+main form {}
+main form fieldset {}
+main form fieldset dl {}
+main form fieldset dl dt {
+    border-color:#aaa;
+    padding-bottom:18px;
+    font-size:1.875rem; font-weight:700;
+}
+main form fieldset dl dd {
+    padding-bottom:38px;
+}
+main form fieldset dl dd input {
+    width:500px; height:53px;
+    border-radius:10px;
+    border:1px solid #aaa;
+}
+main form h2 {
+    padding-top:38px; padding-bottom:32px;
+    font-size:1.875rem; font-weight:700;
+}
+main form .btn {
+    color:#aaa;
+}
+main form .btn button {
+    width:500px; height:53px;
+    border-radius:10px; border:1px solid #aaa;
+}
+main form .btn #login_btn {
+    color:#fff;
+    background-color:#222;
+    margin-bottom:18px;
+}
+main form .btn #login_google_btn {
+    background-color:#fff;
+}
+main .join_link {
+    text-align:center;
+    padding-top:62px;
+    color:#555;
+}
+main .join_link a {
+    font-weight:700;
+}
+main form fieldset #id [type=submit] {background-color:#222;}

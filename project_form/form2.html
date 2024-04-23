@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/form2.css">
+</head>
+<body>
+    <main>
+        <h1>
+            <a href="#">
+                <img src="./images/Logo.svg.png" alt="Spotify">
+            </a>
+        </h1>
+        <div class="content">
+            <a href="#" class="green">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <form action="#" method="get" id="sign_in_content">
+            <fieldset class="in_content">
+                <legend class="skip">로그인양식</legend>
+                    <p class="first">
+                        <input type="text" name="user_name" value="" required placeholder="Username">
+                    </p>
+                    <p class="second">
+                        <input type="password" name="user_password" value="" required placeholder="Password">
+                    </p>
+                    <p class="stay">
+                        <input type="checkbox" id="stay_box" name="stay_sign_in" value="stay_box">
+                        <label for="stay_box">stay signed in</label>
+                    </p>
+                    <p class="btn">
+                        <button type="submit" id="sign_in_btn">SIGN IN</button>
+                    </p>
+            </fieldset>
+        </form>
+        <a href="#" class="forgot_pw">Forget Password?</a>
+    </main>
+</body>
+</html>

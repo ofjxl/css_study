@@ -72,4 +72,26 @@
 ## text align
 * `부모에 상속개념`으로 text-align을 적용했을 때 그 `자식` 또는 `자손`이 `인라인인 경우`만 정렬을 적용한다.
 * (css에서 선택자를 쓸 때 같은 크기나 글씨나 공통된 태그들을 적용할 때 최대한으로 공통된 선택자들을 찾아서 묶어주는 연습을 해야됨)
-## 
+## form 요소와 속성 
+## `<form actopn="#" method=""></form>`
+* action : 
+* method : 
+### `<input type="" name="">`
+* type : 속성은 입력양식/ 선택&목록 컨트롤 양식 종류에 따라 의미가 달라짐 
+* 입력양식 :type-> text, password, tel, url, email, textarea등..
+* 선택양식 :checkbox, radio, option, select 등이 있음 
+* name : 서버(action)전송 시 입력한 데이터 구분 명칭
+* readonly : 읽기 전용 설정 
+* autofocus, autocomplete : 
+* value : 미리 제시된 텍스트(활성화 시 제거안됨)
+* placeholder : 미리 제시된 텍스트(활성화 시 제거됨)
+* value와 placeholder의 차이점 : value는 검색란에 미리 제시된 텍스트가 있는데 사용자가 검색을 할 때 제거가 되지 않지만 placeholder는 사용자가 검색 하면서 활성화가 되면 제거가 된다. 
+* maxlength : 최대글자 수 지정. 미리 사용자가 몇글자를 써도 되는지 제시를 해주는 태그임
+### `<textarea></textarea>`
+* rows, cols : rows는 세로열, cols는 가로열이고 rows에 예를 들어 5를 쓴다면 5문단 쓸 수 있게 미리 나와주고 세로열도 마찬가지 이므로 100을 쓴다면 그 만큼의 크기로 나온다. 
+* 사용용도 및 주의사항 : rows, cols를 쓸 때 보통 가로,세로의 길이를 정확하게 알 수 없으므로 보통 css에서 처리를 한다. 
+### input의 입력양식과 선택양식
+* text, url 등의 사용자가 직접입력가능한 입력양식
+* radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
+* `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터구분용))
+* `value` : 입력양식(초기값), 선택양식(개별데이터구분용)

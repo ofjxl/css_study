@@ -1,0 +1,93 @@
+main {
+    text-align: center;
+    width:1024px; height:999px; 
+    background-color:#222;
+    font-family: "noto sans kr", sans-serif;
+}
+main h1 {
+    padding-top:97px;
+}
+main h1 a {}
+main h1 a img {}
+main .content {
+    text-align:center;
+    padding-top:89px;
+}
+main .content .green {
+    text-align: center;
+    border-bottom: 3px solid #1ED760;
+    letter-spacing: 0.2px;
+    font-size:1.25rem;
+    color:#fff;
+    margin:0 68px;
+    padding-bottom:5px;
+}
+main .content a {
+    letter-spacing: 0.2px;
+    color:#fff;
+    font-size:1.25rem;
+}
+/* form start */
+main #sign_in_content {
+    padding-top:53px;
+}
+main #sign_in_content .in_content {}
+main #sign_in_content .in_content .first {}
+main #sign_in_content .in_content .first input {
+    width: 500px; height:75px;
+    border-radius: 36.5px;
+    padding-left:40px;
+    letter-spacing: -0.2px;
+    border:0;
+}
+main #sign_in_content .in_content .second {
+    padding-top:14px;
+}
+main #sign_in_content .in_content .second input {
+    width: 500px; height:75px;
+    border-radius: 36.5px;
+    padding-left:40px;
+    letter-spacing: -0.2px;
+    border:0;
+}
+main #sign_in_content .in_content .second input::placeholder {
+    /* padding-top:26px 385px 26px 40px; */
+}
+/* 체크박스 */
+main #sign_in_content .in_content .stay {
+    padding-top:31px;
+    padding-bottom: 33px;
+}
+main #sign_in_content .in_content .stay {}
+main #sign_in_content .in_content .stay label[for*=stay_box] {
+    background-image: url(../images/check_box.png);
+    background-repeat: no-repeat;
+    padding-left:34px; padding-bottom:5px;
+    display: inline-block;
+}
+main #sign_in_content .in_content .stay #stay_box {display:none;}
+main #sign_in_content .in_content .stay #stay_box[name*=stay_box]:input+label {
+background-image: url(../images/check_box.svg);
+}
+main #sign_in_content .in_content .stay #stay_box {
+    background-image:url(../images/check_box.svg);
+}
+main #sign_in_content .in_content .stay label {
+    /* padding-top:26px; padding-left: 40px; */
+    letter-spacing: 0.2px;
+    color:#fff;
+}
+/* sign 박스 */
+main #sign_in_content .in_content .btn {}
+main #sign_in_content .in_content .btn #sign_in_btn {
+    margin-bottom: 14px;
+    font-weight: 700;
+    background-color:#1ED760; color:#fff;
+    width:500px; height:75px;
+    border-radius: 36px;
+    border:0;
+}
+main .forgot_pw {
+    color:#fff;
+    letter-spacing: 0.2px;
+}

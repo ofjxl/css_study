@@ -2,10 +2,10 @@ main {
     font-family:"noto sans kr", sans-serif;
     /* text-align:center; */
     margin-top:84px; margin-left:262px;
-    width:500px;
+    width:500px; 
 }
 main h1 {
-    font-size:4.375rem; font-weight:900;
+    font-size:4.375rem; font-weight:700;
     letter-spacing:-0.2px;
     padding-bottom:25px;
 }
@@ -38,16 +38,26 @@ main form .btn {
     color:#aaa;
 }
 main form .btn button {
-    width:500px; height:53px;
+    width:500px; /* height:53px; */
     border-radius:10px; border:1px solid #aaa;
 }
+main #login_frm fieldset dl dd input[name^=user] {
+    width:100%; line-height:53px;
+    padding-left:15px;
+    color:#aaa;/* input입력 글자 색상  */
+}
+main #login_frm fieldset dl dd input[name^=user]::placeholder {
+    color:#ff0000;
+}
 main form .btn #login_btn {
+    width:100%; line-height:53px;
     color:#fff;
     background-color:#222;
     margin-bottom:18px;
 }
 main form .btn #login_google_btn {
-    background-color:#fff;
+    width:100%; line-height:53px;
+    background-color:#fff; color:#222;
 }
 main .join_link {
     text-align:center;

@@ -1,0 +1,53 @@
+main {
+    margin:363px 36px 337px 40px;
+    width:948px; 
+    text-align: center;
+    font-family: "noto sans kr", sans-serif;
+}
+main .title {
+    padding-bottom: 5px;
+    font-size:2.5rem;
+    font-weight: 700;
+}
+main .content { 
+    padding-bottom:58px;
+    font-size:2.5rem;
+    font-weight: 300;
+}
+main .content2 {
+    text-align: right;
+    font-size:1.125rem;
+    color:#383838;
+}
+/* table start */
+main .t1 {
+    width:944px
+    line;
+    display:inline-block;
+    border:1px solid #000;
+    border-left:0px; border-right:0px;
+}
+main .t1 thead {
+    border-bottom:2px solid;
+}
+main .t1 thead tr {}
+main .t1 thead tr th {}
+main .t1 tbody {}
+main .t1 tbody tr  {}
+main .t1 tbody tr td {
+    line-height:80px;
+    width:944px;
+    border-bottom:1px solid;
+}
+main .t1 tbody tr td span {
+    padding:3.5px 6.5px;
+    background-color:#E5017F;
+    color:#fff;
+    width:72px; height: 26px;
+    border-radius: 10px;
+}
+main .t1 tbody tr td span del {
+    color:#888; font-size: 1.125rem;
+}
+main .t1 thead tr .pink {background-color:#FFD1E2;}
+main .t1 tbody tr .pink {background-color:#FFD1E2;}

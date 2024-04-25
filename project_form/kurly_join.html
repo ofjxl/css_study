@@ -23,7 +23,7 @@
             <p>①"몰" 이란 웹컬리 회사가 재화 또는 용역(이하 "재화등"이라 함)을 이용자에게 제공하기 위하여 컴
             퓨터등 정보통신설비를 이용하여 재화등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울
             러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</p>
-            <p>②"이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 
+            <p>②"이용자"란 "몰"에 접속하여 이 약 관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 
             말합니다.</p>
         </div>
         <form action="#" method="post" id="join_frm">
@@ -35,19 +35,19 @@
                     <dd><button type="button" id="check_btn">중복확인</button></dd>
                     <dt>비밀번호<span>*</span></dt>
                     <dd><input type="password" name="user_password" placeholder="비밀번호를 입력해주세요" required></dd>
-                    <dd></dd>
+                    <dd><!--  --></dd>
                     <dt>비밀번호확인<span>*</span></dt>
-                    <dd><input type="password" name="password_check" placeholder="비밀번호를 한번 더 입력해주세요" required></dd>
-                    <dd></dd>
+                    <dd><input type="password" name="user_password_check" placeholder="비밀번호를 한번 더 입력해주세요" required></dd>
+                    <dd><!--  --></dd>
                     <dt>이름<span>*</span></dt>
                     <dd><input type="text" name="user_name" placeholder="이름을 입력해주세요" required></dd>
-                    <dd></dd>
+                    <dd><!--  --></dd>
                     <dt>이메일<span>*</span></dt>
                     <dd><input type="email" name="user_email" placeholder="예)abc@web.com" required></dd>
                     <dd><button type="button" id="check_btn">중복확인</button></dd>
                     <dt>휴대폰<span>*</span></dt>
                     <dd>
-                        <select name="phone">
+                        <select name="agency">
                             <option value="kt">KT</option>
                             <option value="lg">LG</option>
                             <option value="skt">SKT</option>
@@ -55,31 +55,31 @@
                             <option value="lg_aff">LG알뜰폰</option>
                             <option value="skt_aff">SKT알뜰폰</option>
                         </select>
-                        <input type="text" name="phone_number" placeholder="숫자만 입력해주세요 예)01012345678">
+                        <input type="number" name="user_phone_number" placeholder="숫자만 입력해주세요 예)01012345678">
                     </dd>
-                    <dd><button type="button" id="cer_btn">인증번호받기</button></dd>
+                    <dd><button type="button" id="btn_cer">인증번호받기</button></dd>
                     <dt>주소<span>*</span></dt>
                     <dd>
-                        <button type="button" id="address">주소 검색</button>
+                        <button type="button" id="btn_address">주소 검색</button>
                         <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
                     </dd>
-                    <dd></dd>
+                    <dd><!--  --></dd>
                     <dt>성별</dt>
                     <dd>
                         <input type="radio" name="gender" value="male" id="male"><label for="male">남자</label>
                         <input type="radio" name="gender" value="female" id="female"><label for="female">여자</label>
                         <input type="radio" name="gender" value="gender_n" id="gender_n"><label for="gender_n">선택안함</label>
                     </dd>
-                    <dd></dd>
+                    <dd><!--  --></dd>
                     <dt>생년월일</dt>
                     <dd>
-                        <input type="text" name="year" placeholder="yyyy">
+                        <input type="number" name="birthday_year" maxlength="4" placeholder="yyyy">
                         <span>/</span>
-                        <input type="text" name="month" placeholder="mm">
+                        <input type="number" name="birthday_month" maxlength="2" placeholder="mm">
                         <span>/</span>
-                        <input type="text" name="day" placeholder="dd">
+                        <input type="number" name="birthday_day" maxlength="2" placeholder="dd">
                     </dd>
-                    <dd></dd>
+                    <dd><!--  --></dd>
                 </dl>
                 <div class="join_btn">
                     <button type="submit" id="join_btn">가입하기</button>

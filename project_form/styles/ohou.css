@@ -1,0 +1,117 @@
+main {
+    font-family: "noto sans kr", sans-serif;
+    width:360px; background-color:lightskyblue;
+    letter-spacing: -0.2px;
+}
+/* 회원가입 */
+main .membership {
+    border-bottom:1px solid #C5C5C5;
+    padding-top: 15px; padding-left: 13px;
+}
+main .membership h1 {
+    font-size: 1.375rem; font-weight: 700;
+}
+main .membership p {
+    padding-top: 26px; padding-bottom: 14px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+main .membership .sns {
+    text-align: center;
+}
+main .membership .sns a {}
+main .membership .sns a img {
+    padding-right: 22px; padding-bottom: 26px;
+}
+/* 로그인 */
+main #join_frm {padding-left: 13px;}
+main #join_frm {}
+main #join_frm .ohou_join {}
+main #join_frm .ohou_join dt {
+    font-size: 1.25rem; font-weight: 700;
+    padding-top:30px; padding-bottom:15px;
+}
+main #join_frm .ohou_join dl {}
+/* 이메일*/
+main #join_frm .ohou_join dl dd input[name=user_email] {
+    background-color: #fff;
+    border-radius: 5px; border:1px solid #d4d4d4;
+    width:157px; height: 35px;
+}
+main #join_frm .ohou_join dl .email_box input span {}
+main #join_frm .ohou_join  dl .email_box input::placeholder {
+    padding-top:7px; padding-left:10px;
+}
+main #join_frm .ohou_join dl dd select {
+    width:157px; height: 35px;
+    background-color: #fff;
+    color:#888;
+    border-radius: 5px; border:1px solid #d4d4d4;
+}
+main #join_frm .ohou_join dl dd select option {}
+/* 비밀번호,닉네임 설명 */
+main #join_frm .ohou_join dl .content {
+    font-size: 0.75rem; 
+    color:#9D9FA1;
+    padding-bottom:10px;
+}
+/* 비밀번호 버튼 */
+main #join_frm .ohou_join dl dd input[name*=psw] {
+    width:338px; height: 41px;
+    border-radius: 5px; border:1px solid #D4D4D4;
+}
+/* 닉네임 */
+main #join_frm .ohou_join dl dd input[name=user_name] {
+    width:338px; height: 41px;
+    border-radius: 5px; border:1px solid #D4D4D4;
+    margin-bottom: 40px;
+}
+/* 약관동의 */
+main #join_frm .ohou_agree {}
+main #join_frm .ohou_agree h2 {
+    font-size: 1.25rem; font-weight: 700;
+    padding-bottom:15px;
+}
+main #join_frm .ohou_agree .ohou_agree_box {
+    border:1px solid #D4D4D4; border-radius: 3px;
+}
+/* 전체동의 */
+main #join_frm .ohou_agree .ohou_agree_box .full_agree {}
+main #join_frm .ohou_agree .ohou_agree_box .full_agree #full_agree {}
+main #join_frm .ohou_agree .ohou_agree_box .full_agree label {
+    font-size: 0.875rem; font-weight: 700;
+}
+main #join_frm .ohou_agree .ohou_agree_box .full_agree label span {
+    font-size: 0.75rem;
+    color:#888; 
+}
+main #join_frm .ohou_agree .ohou_agree_box ul {}
+main #join_frm .ohou_agree .ohou_agree_box ul li {}
+main #join_frm .ohou_agree .ohou_agree_box ul li input {}
+main #join_frm .ohou_agree .ohou_agree_box ul li label {
+    color: #5f5f5f; font-size: 0.875rem;
+}
+main #join_frm .ohou_agree .ohou_agree_box ul li label span {
+    font-size: 0.75rem; color:#0AADDB;
+}
+/* 오른쪽화살표 */
+main #join_frm .ohou_agree .ohou_agree_box ul li a {}
+main #join_frm .ohou_agree .ohou_agree_box ul li a img {}
+/* 회원가입 버튼 */
+main #join_frm .join_btn {}
+main #join_frm .join_btn p {}
+main #join_frm .join_btn p #join_btn {
+    width: 338px; height: 48px;
+    margin-top:25px; margin-bottom: 25px;
+    border-radius: 3px; border:0; background-color: #0AADDB;
+    color:#fff;
+}
+main #join_frm .join_btn .user_id_check {
+    padding-bottom:15px;
+    text-align: center; color:#888;
+    font-size: 0.875rem;
+    padding-right:5px
+}
+main #join_frm .join_btn .user_id_check a {
+    font-size: 0.875rem;
+}

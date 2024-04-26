@@ -95,3 +95,69 @@
 * radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
 * `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터구분용))
 * `value` : 입력양식(초기값), 선택양식(개별데이터구분용)
+## CSS Layout
+### float, flex
+* `float` : 형제 관계에 해당하는 block or inline tag 왼쪽, 오른쪽 정렬할 때 사용 
+* 예 : ul-li*3개 정렬 `ul li {float:left;}`
+* `flex` : 정렬하고자 하는 아이템의 부모한테 flex를 먼저 설정한다. 
+* 예 : ul-li*3개 정렬 `ul {display:flex;}`
+* flex 설정 시 **기본값** : 메인축(수평) 교차축 (수직)
+* `display:flex;` : 정렬대상의 부모 설정 속성값, 설정 시 해당 부모 기준 자식까지(자손x) flexible box layout으로 처리하겠다라는 말임 
+## flex의 기초개념 알기
+* 정렬대상의 부모를 `container`라고 함
+* 실제 내가 정렬하고자 하는 대상을 item이라고 함
+## 메인축과 교차축
+* 메인축(main_axis) : 아이템이 정렬된 방향
+* 교차축(cross_axis) : 아이템이 교차된 방향
+### flex-direction
+* `container(부모)에 적용하는 속성`으로 container안의 item의 메인축 방향 즉 아이템의 정렬방향을 설정한다. 
+* `flex-direction:row` : 왼쪽 -> 오른쪽 수평축 (기본값)
+* `flex-direction:row-reverse` : 오른쪽 -> 왼쪽
+* `flex-direction:column-reverse` : 아래 -> 위
+### flex-wrap
+* `container에 적용하는 속성`으로 container내부 items 줄바꿈처리를 설정한다. 
+* `flex-wrap:wrap` : 기본값(자동 줄바꿈) ex) 1 2 3
+* `flex-wrap:wrap-reverse` : 행 기준 역방향으로 자동 줄바꿈 처리
+* `flex-wrap:nowrap` : 줄바꿈하지 않음 (한 줄 처리) 가변너비에 따라 자동으로 % 크기로 변경
+### flex-flow
+* `container에 적용하는 속성`으로 flex-direction과 flex-wrap을 묶음으로 처리할 수 있음 
+* `flex-direction:column + flex-wrap:nowrap`일 경우(아래)
+* `flex-flow:column nowrap` 이라고 작성 가능 
+### justify-content
+* `container에 적용하는 속성`으로 메인축의 정렬방법으로 설정함
+* `justify-content:flex-start` : items의 시작점 container의 시작점으로 정렬
+* `justify-content:flex-end` : items의 시작점 container의 끝점으로 정렬
+* `justify-content:center` : items을 메인축 기준 container에서 가운데 정렬
+* `justify-content:space-between` : items을 container의 start,end 양끝 items을 배치하고 나머지는 고르게 정렬
+* `justigy content:space-around` : items을 container안에서 균등한 여백을 포함하여 정렬
+### align-content
+* `container에 적용하는 속성`으로 교6차축의 아이템이 2줄 이상일 경우 정렬방법임
+* -flex-wrap:wrap적용한 상태로 확인하세요
+* `align-content:stretch` : 기본값(교차축 기준으로 아이템 늘리기)
+* `align-content:flex-start` : container의 start지점 기준 item 정렬
+* `align-content:flex-end` : container의 end지점 기준 item 정렬
+* `align-content:center` : container의 가운데 위치 기준 item 정렬
+* `align-content:space-between` : container의 start,end에 양쪽 끝 맞추고 나머지 item 균등하게 정렬
+* `align-content:space-around` : container에서 모든 item 균등하게 정렬
+### align-items
+* `container에 적용하는 속성`으로 교차축의 아이템이 1줄 일 경우 정렬방법임 (한줄이니까between, around는 적용이 안됨)
+* `align-items:stretch` : (기본값) 교차축 방향 시작지점에 맞춰서 정렬(start와 거의 차이 없음)
+
+* `align-items:flex-start` : 교차축 기준 container의 시작지점에 맞춰서 정렬(왼쪽 / 위)
+* `align-items:flex-end` : 교차축 기준 container의 종료지점에 맞춰서 정렬(오른쪽 / 아래)
+* `align-items:center` : 교차축 기준 container의 가운데 지점에 맞춰서 정렬(수직중앙, 수평중앙)
+* `align-items:baseline` : 교차축 기준 container의 시작지점에 맞춰서 정렬(왼쪽 / 위)
+### align-self
+* `item에 적용하는 속성`으로 container에 적용하는 align-items보다 우선순위가 높음
+* flex box의 교차축을 정렬합니다. 
+* `align-self:flex-start` : 교차축 기준 container의 start 시작 위치 (top or left)
+* `align-self:flex-end` : 교차축 기준 container의 end 종료 위치 (bottom or right)
+* `align-self:center` : 교차축 기준 container의 center중심 위치(center, middle)
+* `align-self:baseline` : 교차축 기준 container의 baseline 위치(내용 크기에 따라 다름 (기본은 start동일))
+### order
+* `item에 적용하는 속성`으로 아이템의 정렬순서 설정 (단위x)
+* `order:-1` : ex)예시 숫자 중 가장 작은 수로 처번째 정렬된다. 
+* `order:0` : ex)예시 숫자 중 두번째 큰 수로 두번째 정렬된다. 
+* `order:1` : ex)예시 숫자 중 가장 큰수로 세번째 정렬된다. 
+### flex
+* `item에 적용하는 속성`으로 증가/감소/기본의 묶음 속성임

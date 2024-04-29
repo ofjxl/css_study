@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariana Grande</title>
+    <!-- 웹 글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- css링크주소 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <main>
+        <div class="bg1">
+            <section>
+                <h1><a href="#"><img src="./images/logo.png" alt="ariana grande_logo"></a></h1>
+                <h2>ARIANA GRANDE<br><span>Sweet like candy</span></h2>
+                <form action="#" method="get" id="search">
+                    <fieldset class="search">
+                        <legend class="skip">검색 양식</legend>
+                        <input type="text" name="usersearch" placeholder="향수이름을 입력해주세요">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <div class="bg2">
+            <section>
+                <p>Q.<em>Cloud Pink</em>향수 중 주요 향이 무엇인가요?</p>
+                <form action="#" method="get" id="quiz_frm">
+                    <fieldset class="cloud_quiz">
+                        <legend class="skip">퀴즈 양식</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="vanilla_q" name="quiz_q" value="vanilla_q">
+                                <label for="vanilla_q">바닐라와 사탕무</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="rose_q" name="quiz_q" value="rose_q">
+                                <label for="rose_q">장미와 피오니</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="grape_q" name="quiz_q" value="grape_q">
+                                <label for="grape_q">포도와 체리</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="coconut_q" name="quiz_q" value="coconut_q">
+                                <label for="coconut_q">코코넛과 피치</label>
+                            </li>
+                        </ul>
+                        <button type="button" name="check" id="check_btn">정답 확인 하기</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

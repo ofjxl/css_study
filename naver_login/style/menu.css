@@ -1,0 +1,120 @@
+#app {
+    width:375px;
+    height:812px;/* 와이어프레임 기준 임시 높이값 */
+    border:1px solid black;
+    margin:30px auto 0;
+    padding-top:42px;/* status공간 */
+}
+/* ======레이아읏 */
+#app header {
+    border:1px solid black;
+    padding:16px; height:56px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#app main {}
+/* =======Header */
+#app header h1 {font-size:1.25rem;}
+#app header .right {display:flex;}
+#app header .right a {margin-left:10px;}
+#app header .right .record {margin:0; width:24px; height:24px; background-color:gray;}
+#app header .right .setting {width:24px; height:24px; background-color:gray;}
+#app header .right .close {width:24px; height:24px; background-color:gray;}
+/* ========Main */
+/* ========광고 */
+#app main .adver {width:375px; background-color:gray; border:1px solid black;}
+#app main .adver1 {height:86px; margin-bottom:17px;}
+/* ========로그인 */
+#app main > h2 {
+    height:56px;
+    padding:0 16px 12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#app main > h2 a {}
+#app main h2 a em {font-size:1.125rem; font-weight:700;}
+/* ========메뉴들 */
+#app main .menu {
+    margin:0 16px 16px; border:1px solid black;
+    display:flex; flex-flow:row wrap;
+    padding:10px 0;
+}
+#app main .menu a {
+    border:1px solid gray;
+    width:calc(100% / 4);
+    display:flex; flex-flow:column wrap;
+    align-items:center;
+    margin:0 0 24px;
+}
+#app main .menu a:nth-child(5) ,
+#app main .menu a:nth-child(6) ,
+#app main .menu a:nth-child(7),
+#app main .menu a:nth-child(8) {margin:0;}
+#app main .menu a img {
+    width: 42px; height:42px;
+    border:1px solid black;
+    margin:0 0 5px;
+}
+#app main .menu a span {
+    font-size:0.75rem;
+}
+/* =========공지사항&이벤트 문구 */
+#app main .notice {
+    margin:16px; border:1px solid black;
+    display:flex; align-items: center; margin:0 0 16px;
+    height:44px; padding:16px;
+}
+#app main .notice img {
+    width: 24px; height: 24px; border:1px solid black;
+    margin-right:14px;
+}
+#app main .notice a {font-size: 0.75rem;}
+/* =========광고2 */
+#app main .adver2 {height:116px; margin:0 0 20px;}
+/* =========서비스 */
+#app main .service_wrap {}
+#app main .service_wrap .top {
+    border:1px solid black;
+    padding:10px 16px;
+    display:flex; justify-content:space-between;
+    align-items:center;
+    margin-bottom:17px;
+}
+#app main .service_wrap .top h2 {}
+#app main .service_wrap .top .search {
+    display:flex; align-items:center;
+}
+#app main .service_wrap .top .search img {
+    width:16px; height:16px;
+    border:1px solid gray;
+    margin-right:10px;
+}
+#app main .service_wrap .top .search span {font-size:0.75rem;}
+#app main h3 {
+    border:1px solid black;
+    font-size:0.75rem; letter-spacing:-0.2px;
+    height:35px;
+    display:flex; align-items:center;
+    padding:0 16px;
+    margin-bottom:12px;
+}
+/* ==========메뉴들 */
+#app main .news_category {
+    /* border:1px solid black; */
+    margin:0 16px;
+    display:flex; flex-flow:row wrap;
+}
+#app main .news_category a {
+    border:1px solid black;
+    width:calc(100% / 2);
+    display:flex; align-items:center;
+    margin:0 0 16px;
+}
+#app main .news_category a img {
+    width:24px; height:24px;
+    border:1px solid gray;
+    font-size:0.875px;
+    margin-right:5px;
+}

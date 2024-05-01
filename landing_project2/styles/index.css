@@ -1,20 +1,27 @@
 main {
-    font-family:"noto sans kr", "Quicksand" sans-serif; 
-    width:1920px; /* background:darkcyan; */
+    font-family:"noto sans kr", "Quicksand", sans-serif; 
 }
 /* 배경 공통.개별값 */
 main .bg {
     background-position:center;
     background-repeat:no-repeat;
+    background-size:cover;
 }
-main .bg > section {width:1250px; margin:0 auto;} 
+main .bg > section {width:1250px; margin:0 auto;/* background:darkcyan; */} 
 main .bg1 {
-    background-image:url(../images/bg1.png);
+    background-image:url(../images/bg1.jpg); height:1004px;
 }
-main .bg2 {}
+main .bg2 {
+    background-image:url(../images/bg2.jpg); height:566px;
+    font-family:"Quicksand", sans-serif;
+}
+main .bg3 {
+    background-image:url(../images/bg3.jpg); 
+    font-weight:"noto sans kr", sans-serif; height:1147px;
+}
 /* -------------------------------표지 */
 main .bg1 section {
-    width:1250px; margin:0 auto;
+    width:1250px; margin:0 auto ;
 }
 main .bg1 section h1 {}
 main .bg1 section h1 a {}
@@ -29,36 +36,101 @@ main .bg1 section h2 span {
     color:#432c4f; line-height:1.3; letter-spacing:-0.1px;
 }
 main .bg1 section #search {}
-main .bg1 section #search .search {
-    width:325px;
-}
+main .bg1 section #search .search {}
 main .bg1 section #search .search input {
-    background:#fbd1d5; border:0;
-    margin-bottom:421px;
-    margin-left:462px;
+    background-color:rgb(251, 209, 213, 0.5); border:0;
+    width:509px; height:78px;
+    margin-left:370px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    outline:none;
 }
-main .bg1 section #search .search input::after {
-    content:'';
-    background-image:url(../images/search.svg);
-    background-repeat:no-repeat;
-    width:22px; height:22px;
-    display:inline-block;
+main .bg1 section #search .search #name_search {}
+main .bg1 section #search .search #name_search img {
+    width:42px; height:42px;
 }
 main .bg1 section #search .search input::placeholder {
-    font-size:0.75rem; color:#fff;
+    font-size:1.563rem; color:#050505;
     font-weight:300;
     letter-spacing:-0.2px;
-    padding-top:9px; padding-left: 10px;
+    padding-top:5px; padding-left: 10px;
 }
-/* ----------------------------==2.퀴즈 */
-main .bg2 section {}
-main .bg2 section p {}
-main .bg2 section p em {}
-main .bg2 section #quiz_frm {}
-main .bg2 section #quiz_frm .cloud_quiz {}
-main .bg2 section #quiz_frm .cloud_quiz ul {}
-main .bg2 section #quiz_frm .cloud_quiz ul li {}
-main .bg2 section #quiz_frm .cloud_quiz ul li input {}
+/* =================2.퀴즈 */
+main .bg2 section {
+    display:flex;
+}
+main .bg2 section p img {}
+main .bg2 section #quiz_frm {
+    display:flex; margin:0 auto;
+}
+main .bg2 section #quiz_frm .cloud_quiz {
+    background-color:rgb(255, 255, 255, 0.3);
+    width:546px; /* height:444px; */
+    margin:61px 20px;
+    border-radius:10px;
+}
+main .bg2 section #quiz_frm .cloud_quiz p {
+    padding:33px 22px 33px 12px;
+    font-weight: 300; font-size:1.625rem;
+}
+main .bg2 section #quiz_frm .cloud_quiz p em {
+    font-size:1.875rem; color:#432c4f;
+    font-weight: 500;
+}
+main .bg2 section #quiz_frm .cloud_quiz ul {
+    float:right;
+    padding-right:22px;
+}
+main .bg2 section #quiz_frm .cloud_quiz ul li {
+    padding-bottom:30px;
+}
+main .bg2 section #quiz_frm .cloud_quiz ul li input {
+    display:none;
+}
 main .bg2 section #quiz_frm .cloud_quiz ul li input[name^=_q] {}
-main .bg2 section #quiz_frm .cloud_quiz ul li label {}
-main .bg2 section #quiz_frm .cloud_quiz #check_btn {}
+main .bg2 section #quiz_frm .cloud_quiz ul li label {
+    font-size:1.375rem;
+    color:#432c4f;
+    background-image:url(../images/uncheck.svg);
+    background-repeat:no-repeat;
+    display:inline-block;
+    padding-left:30px;
+}
+main .bg2 section #quiz_frm .cloud_quiz #check_btn {
+    margin:51px 86px 35px 127px;
+    width:336px; height:62px;
+    background-color:rgb(244, 0, 68, 0.5);
+    border:0; border-radius:3px;
+    font-size:1.375rem; color:#fff;
+    letter-spacing:-0.2px;
+    padding:5px 20px;
+}
+main .bg2 section #quiz_frm .cloud_quiz #check_btn::after {
+    content:'';
+    background-image:url(../images/cloud_done.svg);
+    background-repeat:no-repeat;
+    width:32px; height:32px;
+    display:inline-block;
+}
+/* ==========3. 향수 리뷰  */
+main .bg3 {}
+main .bg3 section {}
+main .bg3 section iframe {
+    width:1066px; height:620px;
+    padding-top:121px;
+    padding-left:98px;
+}
+main .bg3 section .video_bottom {
+    display:flex;
+}
+main .bg3 section .video_bottom p {}
+main .bg3 section .video_bottom p img {}
+main .bg3 section .video_bottom .v_content1 {
+    background-color:darkcyan;
+}
+main .bg3 section .video_bottom .v_content1 span {}
+main .bg3 section .video_bottom .v_content2 {
+    background:darkcyan;
+}
+/* ===========4. */

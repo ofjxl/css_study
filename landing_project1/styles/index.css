@@ -1,14 +1,36 @@
 main {}
-/* ---------------------배경 공통 & 개별값 */
+/* ---------------------배경 공통 & 개별값 + 공통 제목 */
 main .bg {
     background-position:center;
     background-repeat:no-repeat;
+    background-size:cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로 크기를 맞춰 채운다는 뜻 */
 }
-main .bg1 {
-    background-image:url(../images/bg.jpg);
-    height:1002px;
+main .bg > section {width:1250px; margin:0 auto; /* background-color:darkcyan; */}
+main .bg1 {background-image:url(../images/bg.jpg); height:1002px;}
+main .bg2 {background-image:url(../images/bg_2.jpg); /* height:500px; */}
+main .bg section .sub_title {
+    font-size:3.438rem; letter-spacing:-0.1px; font-weight:500;
+    color:#fff; line-height:1.2;
 }
-/* ----------------------------1. 표지 */
+main .bg section .sponsor_link {
+    /* 0% FE9300, 100% FF7300 */
+    /* CSS 회전각도단위 deg */
+    background:linear-gradient(90deg, #FE9300, #FF7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때 
+    해당 요소 추가 배경이미지 꾸미기를 원한다면 
+    가상선택자(before, after)를 활용하는 것을 권장한다. */
+    font-size:2.125rem; font-weight:700;
+    color:#fff;
+    width:409px; height:71px;/* line-height:71px; */
+    border-radius: 40px;
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    /* text-align:center; */
+}
+/* ============1. 표지 */
 main .bg1 section {
     width:1250px;
     margin:0 auto;
@@ -30,23 +52,6 @@ main .bg1 section .sponsor_link::after {
     width:24px; height:24px;
     display:inline-block;
     margin-left:10px;
-}
-main .bg1 section .sponsor_link {
-    /* 0% FE9300, 100% FF7300 */
-    /* CSS 회전각도단위 deg */
-    background:linear-gradient(90deg, #FE9300, #FF7300);
-    /* gradient적용을 위해 background통합속성을 사용했을 때 
-    해당 요소 추가 배경이미지 꾸미기를 원한다면 
-    가상선택자(before, after)를 활용하는 것을 권장한다. */
-    font-size:2.125rem; font-weight:700;
-    color:#fff;
-    width:409px; height:71px;/* line-height:71px; */
-    border-radius: 40px;
-    display:flex; 
-    justify-content:center;
-    align-items:center;
-    margin:0 auto;
-    /* text-align:center; */
 }
 main .bg1 section .sponsor_puestion {
     background:#050505; color:#fff;
@@ -78,57 +83,245 @@ main .bg1 section .sponsor_puestion::after {
 } 
 /* -------------------------2. 표지 */
 /* -------------퀴즈의 왼쪽 부분 */
-main .bg2 {
-    background-image:url(../images/bg_2.jpg);
-    height:500px;
-}
 main .bg2 section {
-    background-color: lightblue;
-    width:1250px; margin:0 auto;
-    display:flex; justify-content:space-between;
+    display:flex; /* flex의 item기본 메인축 정렬은 수평 */ 
+    justify-content:space-between;
+}
+main .bg2 section > * {
+    flex:1; /* width:50%; */
 }
 main .bg2 section .quiz_left {
-    background-color:green;
     width:450px;
 }
 main .bg2 section .quiz_left h2 {
-    font-size:3.438rem; font-weight:500;
     margin:27px 0 39px 212px;
-    color:#fff;
     font-weight: 500;
 }
-main .bg2 section .quiz_left p {
-    font-size:1.25rem;
-    color:#fff;
-    margin-bottom:13px; 
+main .bg2 section .quiz_left h2+p {
+    font-size:1.25rem; line-height:1.7;
+    color:#fff; margin-bottom:13px; 
 }
 /* 퀴즈 양식 */
 main .bg2 section .quiz_left #quiz_frm {}
 main .bg2 section .quiz_left #quiz_frm .quiz_contents {}
 main .bg2 section .quiz_left #quiz_frm .quiz_contents ul {}
-main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li {
-    padding-bottom:34px;
-}
-main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li input {}
+main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li {padding-bottom:34px;}
+main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li:last-child {margin:0;}
+main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li input[name=quiz_q] {display:none;}
 main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li label {
+    background-image:url(../images/quiz_unchecked.svg);
+    background-repeat:no-repeat;
+    padding-left:48px; line-height:28px;
+    display:inline-block;
     color:#fff; 
     font-size: 1.25rem;
 }
-main .bg2 section .quiz_left #quiz_frm .quiz_contents p {}
-main .bg2 section .quiz_left #quiz_frm .quiz_contents p button {
+/* -----------------------퀴즈 (인풋 체크 시 활성화 label 디자인) */
+main .bg2 section .quiz_left #quiz_frm .quiz_contents ul li input[name=quiz_q]:checked+label {
+    background-image:url(../images/quiz_checked.svg);
+}
+main .bg2 section .quiz_left #quiz_frm .quiz_contents+p {}
+main .bg2 section .quiz_left #quiz_frm .quiz_contents p button  {
     width:450px; line-height:39px;
     border-radius:50px; border:0;
     background-color:#050505; color:#fff;
     margin:12px 0 30px;
 }
-/* --------------퀴즈의 오른쪽 부분 */
+/* --------------퀴즈의 오른쪽 부분-----참여현황 */
 main .bg2 section .quiz_right {
-    background-color:green;
-    width:435px;
+    width:500px; 
+    padding:120px 0 107px;
+    display:flex; flex-flow:column wrap;
+    align-items:flex-end;
 }
-main .bg2 section .quiz_right .contents {}
-main .bg2 section .quiz_right .contents h2 {}
-main .bg2 section .quiz_right .contents em {}
-main .bg2 section .quiz_right .contents span {}
-main .bg2 section .quiz_right .contents strong {}
-main .bg2 section .quiz_right .contents p {}
+main .bg2 section .quiz_right .contents h2 {
+    background-color:#FF7300;
+    font-size:1.625rem; /* text-align:center; */
+    justify-content:center;
+    align-items:center;
+    line-height:60px; width:435px;
+    color:#fff;
+    display:flex;
+}
+main .bg2 section .quiz_right .contents h2::before {
+    background-image:url(../images/icon_person.svg);
+    content:''; display:inline-block;
+    width:42px; height:42px;
+}
+main .bg2 section .quiz_right .contents {
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    background-color:#fff;
+}
+main .bg2 section .quiz_right .contents .number {
+    padding:43.5px 63px;
+}
+main .bg2 section .quiz_right .contents .number em {
+    color:#FF7300; font-size:4.375rem; letter-spacing:-0.2px;
+    font-weight:700;
+}
+main .bg2 section .quiz_right .contents .number span {
+    color:#FF7300; font-size:2.125rem;
+    font-weight:700;
+}
+main .bg2 section .quiz_right .contents .number strong {
+    font-size:2.125rem; font-weight:700;
+}
+main .bg2 section .quiz_right p {
+    color:#fff;
+    padding-top:16px;
+}
+/* ----------------3.새끼 북극곰의 이야기 */
+main .bg3 {
+    background-image:url(../images/bg_3.jpg);
+}
+main .bg3 section {
+    padding:134px 0 219px;
+    text-align: center;
+}
+main .bg3 section .sub_title {color:#000;}
+main .bg3 section #video {width:900px; margin:70px 0 99px;}
+main .bg3 section .sponsor_link {}
+/* -------------------4.50%감소 */
+main .bg4 {background-image:url(../images/bg_4.jpg);}
+main .bg4 section {}
+main .bg4 section .sub_title {}
+main .bg4 section .sub_title span {}
+main .bg4 section .sub_t itle+p {}
+main .bg4 section .sub_title p:last-child {}
+main .bg4 section .sub_title p:last-child img {}
+/* --------------5. 빙하감소 */
+main .bg5 {background-image:url(../images/bg_5.jpg);}
+main .bg5 section {}
+main .bg5 section .sub_title {
+    text-align: center;
+    padding:146px 0 30px;
+    color:#000;
+}
+main .bg5 section .sub_title+p {
+    text-align: center;
+    font-size:1.625rem; line-height:1.2;
+}
+main .bg5 section .container {
+    padding:100px 0 183px;
+    display:flex;
+}
+main .bg5 section .container .contents {
+    width:386px; text-align: center;
+    background-repeat:no-repeat;
+    margin-right:46px;
+}
+main .bg5 section .container .content1 {
+    background-image:url(../images/box_img1.jpg);
+}
+main .bg5 section .container .content2 {
+    background-image:url(../images/box_img2.jpg);
+}
+main .bg5 section .container .content3 {
+    background-image:url(../images/box_img3.jpg);
+}
+main .bg5 section .container .contents ul {
+    height:320px;
+    color:#fff; padding-top:64px;
+}
+main .bg5 section .container .contents ul li span {
+    font-size:2.688rem; font-weight:700;
+}
+main .bg5 section .container .contents ul li {
+    padding-bottom:19px; flex:1;
+    font-size:1.625rem;
+}
+main .bg5 section .container .contents .content {
+    /* height:256px; */
+    color:#000; 
+    background-color:#fff;
+    padding:26px 36.5px;
+    line-height: 1.7;
+}
+main .bg5 section .container .contents .content:last-child {
+    padding:60px 36.5px;
+    height:256px;
+}
+
+/* ----------------------6. 지구 전체의 위기 */
+main .bg6 {background-image:url(../images/bg_6.jpg);}
+main .bg6 section {}
+main .bg6 section .sub_title {}
+main .bg6 section .sub_title span {}
+main .bg6 section .sub_title+p {}
+main .bg6 section .sub_title p:last-child {}
+main .bg6 section .sub_title p:last-child img {}
+/* ----------------------------4.6 그룹 선택자 */
+main .bg4 section,
+main .bg6 section {padding:103px 0 206px;}
+main .bg4 section .sub_title,
+main .bg6 section .sub_title {}
+main .bg4 section .sub_title span,
+main .bg6 section .sub_title span {
+    color:#050505; background-color:#fff;
+    display:inline-block; padding:10px 0;
+}
+main .bg4 section .sub_title+p,
+main .bg6 section .sub_title+p {
+    font-size:2.125rem; line-height: 1.2;
+    color:#fff; margin:85px 0 55px;
+}
+main .bg4 section .sub_title p:last-child,
+main .bg6 section .sub_title p:last-child {}
+main .bg4 section .sub_title p:last-child img,
+main .bg6 section .sub_title p:last-child img {}
+/* ----------------------------7. 환경보전 단체 WWF */
+main .bg7 {background-image:url(../images/bg_7.jpg);}
+main .bg7 section {text-align: center;}
+main .bg7 section h2 {
+    font-size:3.438rem; font-weight:700;
+    padding:109px 0 77.95px; 
+}
+main .bg7 section p {
+    font-size:1.625rem; line-height:1.5;
+    padding-bottom:77.95px;
+}
+/* ---------------------------8.활동 */
+main .bg8 {background-image:url(../images/bg_8.jpg);}
+main .bg8 section {padding:81px 0 127px;}
+main .bg8 section .sub_title {
+    text-align:center;
+    margin-bottom:85px; color:#000;
+}
+main .bg8 section .container {
+    display:flex;
+    justify-content:space-between;
+}
+main .bg8 section .container > * {
+    width:calc((100% - 66px) / 2);
+}
+main .bg8 section .container .left  {
+    /* flex:1; */
+}
+main .bg8 section .container .left li  {
+    height:263px; 
+}
+main .bg8 section .container .left li:nth-child(1) {
+    margin-bottom:56px; background-image: url(../images/wwf_img1.jpg);
+}
+main .bg8 section .container .left li:nth-child(2) {
+    background-image:url(../images/wwf_img2.jpg);
+}
+main .bg8 section .container .right {
+    background-image: url(../images/wwf_img3.jpg);
+    background-color:lime; /* flex:1; */
+}
+/* -======================bg8 공통 dl , dt, dd */
+main .bg8 section .container .left li,
+main .bg8 section .container .right {position:relative;}
+main .bg8 section .container /* 중간부모생략 */ dl {
+    background-color:rgb(46, 49, 72, 0.8);
+    position:absolute; left:0; bottom:22px;
+    /* absolute 설정 요소는 블록 요소여도 inline-block처럼 내용 크기만큼만 인식한다 */
+    /* absolute는 inline-block처럼 너비를 내용만큼만 인ㄴ식하니까 반드시 width:100%;를 추가로 입력해서 적용해야 한다!! */
+    padding:15px;
+}
+main .bg8 section .container dl * {color:#fff; line-height:1.2;}
+main .bg8 section .container dl dt {font-size:1.625rem; font-weight:700;}
+main .bg8 section .container dl dd {}

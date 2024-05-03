@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-awesome | css</title>
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/resest.css">
+    <style>
+        h1 {
+        font-size:2.75rem; font-weight:700;
+        padding:10px 0 10px 10px;
+        }
+        .icon_set {}
+        .icon_set li {padding:10px 0 10px 10px;}
+        .icon_set li:first-child {color:red; font-size:32px;}
+        .icon_set li:nth-child(2) {
+            color:darksalmon; font-size:32px;
+        }
+        .icon_set li:nth-child(3) {color:midnightblue; font-size:40px;}
+        /* css-font-awesome */
+        /* 1. font-awesome CDN link태그로 준비한다. */
+        /* 2. awesome 전용의 font-family와 weight를 설정한다. */
+        /* 3. awesome 적용된 태그를 준비한다. */
+        /* 4. 준비한 3번 태그에 가상선택자(after or before)를 작성한다. */
+        /* 5. 가상선택자에 content속성을 입력해서 Uniode를 삽입한다. */
+        .icon_set li .prev {}
+        .icon_set li .prev::before {content:'\f07a';}
+        .icon_set li .next {}
+        .icon_set li .next::before {content:'\f4be';}
+        .icon_set li #my_page {
+            width:300px; height:50px;
+        }
+        .icon_set li #my_page::before {
+            content:'\f2c1'; font-size: 30px; margin-right:10px;
+        }
+        .icon_set li #like {
+            width:300px; height:50px;
+            border-radius:5px; 
+        }
+        .icon_set li #like::after {
+            content:'\f164'; font-size:20px; margin-left:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-Awesome</h1>
+    <p>웹 사이트에서 많이 사용하는 아이콘을 모아놓은 툴킷</p>
+    <p>Font-Awesome HTML로 가져올 땐 인라인구조로 가져온다.</p>
+    <ul class="icon_set">
+        <!-- HTML로 삽입하는 법 -->
+        <li><i class="fa-solid fa-cart-shopping"></i></li>
+        <li><i class="fa-solid fa-hand-holding-heart"></i></li>
+        <li><i class="fa-sharp fa-solid fa-house-user"></i></li>
+        <!-- CSS로 삽입하는 법(Unicode 활용) -->
+        <li><a href="#" class="prev fa">이전으로</a></li>
+        <li><a href="#" class="next fa">다음으로</a></li>
+        <li><button type="button" id="my_page" class="fa">마이페이지</button></li>
+        <li><button type="button" id="like" class="fa">관심상품</button></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

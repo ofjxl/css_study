@@ -142,3 +142,42 @@ main .bg3 section .video_bottom .v_content2 {
     margin-top:26px;
 }
 /* ===========4. */
+main .bg4 {
+    background-image: url(../images/bg4.jpg);
+    text-align: center;
+}
+main .bg4 h2 {
+    font-size: 3.125rem; font-weight: 700;
+    margin: 122px 0 98px 0;
+}
+main .bg4 .img {
+    width: 1250px;
+    display: flex;
+    margin: 0 auto;
+}
+main .bg4 .img img {
+    padding-right: 98px;
+}
+main .bg4 a {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 1250px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+main .bg4 a p {
+    font-size: 2.188rem; font-weight: 300;
+    width: 285px; height: 55px;
+    margin:10px 30px;
+}
+main .bg4 a p:nth-child(1) {
+    background-color: rgb(251, 209, 213, 0.5);
+}
+main .bg4 a p:nth-child(2) {
+    background-color: rgb(255, 244, 216, 0.5);
+}
+main .bg4 a p:nth-child(3) {
+    background-color: rgb(251, 209, 213, 0.5);
+}

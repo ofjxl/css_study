@@ -46,8 +46,8 @@ main .bg1 section #search .search input {
     align-items:center;
     outline:none;
 }
-main .bg1 section #search .search #name_search {}
-main .bg1 section #search .search #name_search img {
+main .bg1 section #search #name_search {}
+main .bg1 section #search #name_search img {
     width:42px; height:42px;
 }
 main .bg1 section #search .search input::placeholder {
@@ -104,14 +104,12 @@ main .bg2 section #quiz_frm .cloud_quiz #check_btn {
     border:0; border-radius:3px;
     font-size:1.375rem; color:#fff;
     letter-spacing:-0.2px;
-    padding:5px 20px;
+    /* padding:5px 20px; */
+    padding: 5px auto;
 }
-main .bg2 section #quiz_frm .cloud_quiz #check_btn::after {
-    content:'';
-    background-image:url(../images/cloud_done.svg);
-    background-repeat:no-repeat;
-    width:32px; height:32px;
-    display:inline-block;
+main .bg2 section #quiz_frm .cloud_quiz #check_btn img {
+    text-align: center; 
+    margin-left: 100px;
 }
 /* ==========3. 향수 리뷰  */
 main .bg3 {}
@@ -180,4 +178,27 @@ main .bg4 a p:nth-child(2) {
 }
 main .bg4 a p:nth-child(3) {
     background-color: rgb(251, 209, 213, 0.5);
+}
+/* ============5. 상품 설명 */
+main .bg5 {background-image: url(../images/bg5.jpg);}
+main .bg5 section {
+    border: 3px solid darkblue;
+}
+main .bg5 section p {
+    margin: 178px 0;
+}
+main .bg5 section p img {width: 615px; height: 829px;}
+main .bg5 section dl {
+    border: 3px solid darkorange;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    float: right;
+    text-align: center;
+}
+main .bg5 section dl dt {
+    font-size: 2.813rem; font-weight: 700;
+}
+main .bg5 section dl dt dd {
+    font-size: 1.563rem; font-weight: 300;
 }

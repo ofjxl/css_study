@@ -180,7 +180,7 @@ main .bg4 a p:nth-child(3) {
     background-color: rgb(251, 209, 213, 0.5);
 }
 /* ============5. 상품 설명 */
-main .bg5 {background-image: url(../images/bg5.jpg);} 
+main .bg5 {background-image:;} 
 main .bg5 section {
     border: 3px solid darkblue;
 }

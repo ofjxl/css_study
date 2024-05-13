@@ -17,7 +17,10 @@ main .bg2 {
 }
 main .bg3 {
     background-image:url(../images/bg3.jpg); 
-    font-weight:"noto sans kr", sans-serif; height:1147px;
+    font-weight:"noto sans kr", sans-serif; 
+}
+main .bg5 {
+    height: 1184px;
 }
 /* -------------------------------표지 */
 main .bg1 section {
@@ -118,16 +121,15 @@ main .bg3 section iframe {
     width:1066px; height:620px;
     padding-top:121px;
     padding-left:98px;
+    padding-bottom: 104px;
 }
-main .bg3 section p {}
-main .bg3 section p img {}
 main .bg3 section .video_bottom {
     display:inline-block;
-    margin-left:571px;
-    justify-content:flex-end;
+    text-align: center;
+    padding-left: 350px;
+    padding-bottom: 128px;
 }
 main .bg3 section .video_bottom .v_content1 {
-    background-color:darkcyan;
     font-size:2.188rem; font-weight:300;
 }
 main .bg3 section .video_bottom .v_content1 span {
@@ -135,9 +137,8 @@ main .bg3 section .video_bottom .v_content1 span {
     line-height:1.2;
 }
 main .bg3 section .video_bottom .v_content2 {
-    background:darkcyan;
     font-size: 1.25rem; font-weight: 300;
-    margin-top:26px;
+    margin-top:26px; 
 }
 /* ===========4. */
 main .bg4 {
@@ -146,7 +147,7 @@ main .bg4 {
 }
 main .bg4 h2 {
     font-size: 3.125rem; font-weight: 700;
-    margin: 122px 0 98px 0;
+    padding: 122px 0 98px 0;
 }
 main .bg4 .img {
     width: 1250px;
@@ -170,6 +171,7 @@ main .bg4 a p {
     width: 285px; height: 55px;
     margin:10px 30px;
 }
+main .bg4 a p {margin-bottom: 270px;}
 main .bg4 a p:nth-child(1) {
     background-color: rgb(251, 209, 213, 0.5);
 }
@@ -180,22 +182,162 @@ main .bg4 a p:nth-child(3) {
     background-color: rgb(251, 209, 213, 0.5);
 }
 /* ============5. 상품 설명 */
-main .bg5 {background-image:;} 
-main .bg5 section {
-    border: 3px solid darkblue;
+main .bg5 {background-image: url(../images/bg5.jpg);}
+main .bg5 p {
+    float: left; padding-top: 178px;
 }
-main .bg5 section p img {width: 615px; height: 829px;}
-main .bg5 section dl {
-    border: 3px solid darkorange;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    float: right;
+main .bg5 p img {}
+main .bg5 .bg5_content {}
+main .bg5 .bg5_content dl {
+    float: right; text-align: center;
+    padding-top: 248px;
+}
+main .bg5 .bg5_content dl dt {
+    font-size: 2.813rem; font-weight: 700;
+    padding-bottom: 18px;
+}
+main .bg5 .bg5_content dl dd {
+    font-size: 1.563rem; font-weight: 300;
+    padding-bottom: 168px;
+}
+/* ================6. 클라우드 핑크 설명들 */
+main .bg6 {background-image: url(../images/bg6.jpg);}
+main .bg6 section {
+    padding-top: 32px;
+    margin: 0 auto;
     text-align: center;
 }
-main .bg5 section dl dt {
+main .bg6 section h2 {
+    font-size: 3.125rem; color: #ababab;
+    font-weight: 500;
+    padding-bottom: 22px;
+}
+main .bg6 section h2 span {
+    font-size: 3.125rem; color: #e98ca5;
+    font-weight: 500;
+}
+main .bg6 section .sub_title  {
+    background-color: #ffeaec; color: #ff799f;
+    font-size: 2.5rem; font-weight: 300;
+    width: 273px; height: 58px;
+    display: inline-block;
+    margin-bottom: 77px;
+}
+main .bg6 section .cp_contents {
+    margin-bottom: 135px;
+}
+main .bg6 section .cp_contents p {
+    font-size: 1.875rem; color: #5f5f5f;
+}
+main .bg6 section .cp_contents .cp1 {
+    padding-bottom: 112px;
+}
+main .bg6 section .cp_contents .cp2 {
+    padding-bottom: 135px;
+}
+/* ==============7. 모드 바닐라 향  */
+main .bg7 {background-image: url(../images/bg7.jpg); height: 1184px;}
+main .bg7 section {display: flex;}
+main .bg7 section .bg7_contents {}
+main .bg7 section .bg7_contents dl {
+    float: left;
+    text-align: center;
+    padding-top: 256px;
+}
+main .bg7 section .bg7_contents dd {
+    font-size: 1.563rem; font-weight: 300;
+    padding-bottom: 173px;
+}
+main .bg7 section .bg7_contents dt {
+    padding-bottom: 18px;
     font-size: 2.813rem; font-weight: 700;
 }
-main .bg5 section dl dt dd {
-    font-size: 1.563rem; font-weight: 300;
+main .bg7 section .bg7_img {
+    /* float: right; */ padding-top: 169px; padding-left: 177px;
 }
+main .bg7 section .bg7_img img {}
+/* ===========8. 모드바닐라 설명  */
+main .bg8 {background-image: url(../images/bg8.jpg);}
+main .bg8 section {
+    margin: 0 auto; text-align: center;
+}
+main .bg8 section h2 {
+    font-size: 3.125rem; font-weight: 500; padding: 61px 0 30px;
+    color: #484847;
+}
+main .bg8 section h2 span {
+    font-size: 3.125rem; font-weight: 500;
+    color: #FFF4D8;
+}
+main .bg8 section .sub_title {
+    background-color: #FFF4D8;
+    width: 400px; height: 58px;
+    display: flex; 
+    align-items: center; margin: 0 auto;
+    color: #C9B396; font-size: 2.5rem; font-weight: 300;
+    margin-bottom: 96px;
+}
+main .bg8 section .md_contents {}
+main .bg8 section .md_contents .md1 {
+    font-size: 1.875rem; color: #5B5754;
+    padding-bottom: 61px;
+}
+main .bg8 section .md_contents .md2 {
+    font-size: 1.875rem; color: #5B5754;
+    padding-bottom: 171px;
+}
+/* ==============9. 갓 이즈 어 우먼 향수 */
+main .bg9 {background-image: url(../images/bg9.png); height: 1184px; }
+main .bg9 section {}
+main .bg9 section p {
+    float: left; padding-top: 178px; 
+}
+main .bg9 section p img {}
+main .bg9 section .bg9_contents {
+    float:right; text-align: center;
+    padding-top: 248px;
+}
+main .bg9 section .bg9_contents dl { display: inline-block;}
+main .bg9 section .bg9_contents dl dt {
+    font-size: 2.813rem; font-weight: 700;
+    padding-bottom: 18px;
+}
+main .bg9 section .bg9_contents dl dd {
+    font-size: 1.563rem; font-weight: 300;
+    padding-bottom: 168px;
+}
+/* ===============10. 갓 이즈 어 우먼 설명 */
+main .bg10 {background-image: url(../images/bg10.jpg);}
+main .bg10 section {
+    text-align: center;
+}
+main .bg10 section h2 {
+    padding-top: 32px; font-size: 3.125rem; font-weight: 500;
+    color: #ABABAB;
+    padding-bottom: 30px;
+}
+main .bg10 section h2 span {
+    font-size: 3.125rem; font-weight: 500;
+    color: #9373B4;
+}
+main .bg10 section .sub_title {
+    width: 800px; height: 58px;
+    background-color: #DEC1FB; color: #fff;
+    display: flex; align-items: center; margin: 0 auto; justify-content: center;
+    font-size: 2.5rem; font-weight: 300;
+    margin-bottom: 103px;
+}
+main .bg10 section .got1 {
+    font-size: 1.875rem; color: #5F5F5F;
+    padding-bottom: 69px;
+} 
+main .bg10 section .got1 span {
+    font-size: 1.875rem; color: #9373B4;
+}
+main .bg10 section .got2 {
+    font-size: 1.875rem; color: #5F5F5F;
+    padding-bottom: 142px;
+} 
+main .bg10 section .got2 span {
+    font-size: 1.875rem; color: #9373B4;
+} 

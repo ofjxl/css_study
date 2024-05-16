@@ -16,7 +16,7 @@ main .bg2 {
     font-family:"Quicksand", sans-serif;
 }
 main .bg3 {
-    background-image:url(../images/bg3.jpg); 
+    background-color: rgb(251, 209, 213, 0.5);
     font-weight:"noto sans kr", sans-serif; 
 }
 main .bg5 {
@@ -39,17 +39,25 @@ main .bg1 section h2 span {
     color:#432c4f; line-height:1.3; letter-spacing:-0.1px;
 }
 main .bg1 section #search {}
-main .bg1 section #search .search {}
-main .bg1 section #search .search input {
-    background-color:rgb(251, 209, 213, 0.5); border:0;
-    width:509px; height:78px;
-    margin-left:370px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    outline:none;
+main .bg1 section #search .search {
+    background-color:rgb(251, 209, 213, 0.5);
+    width:550px; height:90px;
+    margin: 0 auto; display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
-main .bg1 section #search #name_search {}
+main .bg1 section #search .search input {
+    border:0;
+    width: 80%; height: 70%;
+    display:flex;
+    outline:none;
+    background: none;
+}
+main .bg1 section #search #name_search {
+    background: none;
+    border: 0;
+}
 main .bg1 section #search #name_search img {
     width:42px; height:42px;
 }
@@ -90,6 +98,9 @@ main .bg2 section #quiz_frm .cloud_quiz ul li {
 }
 main .bg2 section #quiz_frm .cloud_quiz ul li input {
     display:none;
+}
+main .bg2 section #quiz_frm .cloud_quiz ul li input:checked + label {
+    background-image: url(../images/check.svg);
 }
 main .bg2 section #quiz_frm .cloud_quiz ul li input[name^=_q] {}
 main .bg2 section #quiz_frm .cloud_quiz ul li label {
@@ -182,7 +193,7 @@ main .bg4 a p:nth-child(3) {
     background-color: rgb(251, 209, 213, 0.5);
 }
 /* ============5. 상품 설명 */
-main .bg5 {background-image: url(../images/bg5.jpg);}
+main .bg5 {background-color: #FFF7F4;}
 main .bg5 p {
     float: left; padding-top: 178px;
 }
@@ -201,7 +212,7 @@ main .bg5 .bg5_content dl dd {
     padding-bottom: 168px;
 }
 /* ================6. 클라우드 핑크 설명들 */
-main .bg6 {background-image: url(../images/bg6.jpg);}
+main .bg6 {background-color: #FFF7F4;}
 main .bg6 section {
     padding-top: 32px;
     margin: 0 auto;
@@ -236,7 +247,7 @@ main .bg6 section .cp_contents .cp2 {
     padding-bottom: 135px;
 }
 /* ==============7. 모드 바닐라 향  */
-main .bg7 {background-image: url(../images/bg7.jpg); height: 1184px;}
+main .bg7 {background-color: #F4C1C1;}
 main .bg7 section {display: flex;}
 main .bg7 section .bg7_contents {}
 main .bg7 section .bg7_contents dl {
@@ -257,7 +268,7 @@ main .bg7 section .bg7_img {
 }
 main .bg7 section .bg7_img img {}
 /* ===========8. 모드바닐라 설명  */
-main .bg8 {background-image: url(../images/bg8.jpg);}
+main .bg8 {background-color: #F4C1C1;}
 main .bg8 section {
     margin: 0 auto; text-align: center;
 }
@@ -287,14 +298,15 @@ main .bg8 section .md_contents .md2 {
     padding-bottom: 171px;
 }
 /* ==============9. 갓 이즈 어 우먼 향수 */
-main .bg9 {background-image: url(../images/bg9.png); height: 1184px; }
-main .bg9 section {}
-main .bg9 section p {
-    float: left; padding-top: 178px; 
+main .bg9 {background-color: #FFF7F4}
+main .bg9 section {
+    display: flex; justify-content: space-between;
+    padding: 178px 0;
 }
+main .bg9 section p {}
 main .bg9 section p img {}
 main .bg9 section .bg9_contents {
-    float:right; text-align: center;
+    text-align: center;
     padding-top: 248px;
 }
 main .bg9 section .bg9_contents dl { display: inline-block;}
@@ -307,7 +319,7 @@ main .bg9 section .bg9_contents dl dd {
     padding-bottom: 168px;
 }
 /* ===============10. 갓 이즈 어 우먼 설명 */
-main .bg10 {background-image: url(../images/bg10.jpg);}
+main .bg10 {background-color: #FFF7F4;}
 main .bg10 section {
     text-align: center;
 }
@@ -342,3 +354,27 @@ main .bg10 section .got2 span {
     font-size: 1.875rem; color: #9373B4;
 } 
 /* =============11. footer */
+main .bg11 {background-color: #FFEAEC;}
+main .bg11 section {
+    margin: 0 auto; text-align: center;
+    padding: 80px 335px; width: 100%;
+}
+main .bg11 section .ft_top {
+    width: 1250px; 
+    display: flex; align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+main .bg11 section .ft_top .ft_t_left {}
+main .bg11 section .ft_top a {
+    margin-right: 25px;
+}
+main .bg11 section .ft_top a img {
+    margin-right: 30px;
+}
+main .bg11 section .ft_link {
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    width: 1250px;
+} 
